@@ -1,19 +1,15 @@
-Perfect! Here’s the **fully updated README.md** with ROC-AUC included in the sample output, ready to paste into your GitHub repo:
 
----
+💳 Credit Scoring Model
 
-# 💳 Credit Scoring Model
-
-## 🚀 Project Overview
+🚀 Project Overview
 
 This project predicts an individual's **creditworthiness** using financial data.
 It is part of the **CodeAlpha Machine Learning Internship** and demonstrates practical skills in **data preprocessing, model training, and evaluation** using Python and Scikit-learn.
 
 The model helps lenders **assess risk** by classifying applicants as likely to default or not.
 
----
 
-## 📊 Dataset
+📊 Dataset
 
 * **Training Data:** `data/simulated.csv`
 
@@ -23,18 +19,13 @@ The model helps lenders **assess risk** by classifying applicants as likely to d
 
   * New applicants for whom the model predicts creditworthiness.
 
----
-
-## 🧩 Features
+🧩 Features
 
 **Numerical:** `income`, `age`, `debt`, `credit_util`, `num_late`, `prev_defaults`, `emp_len`, `credit_hist`
 **Categorical:** `home_ownership`, `purpose`
 **Target Variable:** `label` (0 = Good Credit, 1 = Bad Credit)
 
----
-
-## 🗂 Project Structure
-
+🗂 Project Structure
 ```
 CodeAlpha_CreditScoring/
 │── data/
@@ -48,11 +39,9 @@ CodeAlpha_CreditScoring/
 │── README.md
 ```
 
----
+ 🏃 How to Run
 
-## 🏃 How to Run
-
-### 1️⃣ Train the Model
+1️⃣ Train the Model
 
 ```bash
 python train.py
@@ -60,7 +49,7 @@ python train.py
 
 * Trains the model on `simulated.csv` and saves it as `models/credit_model.pkl`.
 
-### 2️⃣ Predict on New Applicants
+2️⃣ Predict on New Applicants
 
 ```bash
 python predict.py
@@ -70,9 +59,9 @@ python predict.py
 
 ---
 
-## 🖥 Sample Output
+🖥 Sample Output
 
-### Training the Model (`train.py`)
+Training the Model (`train.py`)
 
 ```
 Model Evaluation on Test Data:
@@ -85,7 +74,7 @@ ROC-AUC Score: 0.94
 
 *The model is trained on `simulated.csv` and saved as `models/credit_model.pkl`.*
 
-### Predicting New Applicants (`predict.py`)
+Predicting New Applicants (`predict.py`)
 
 ```
 Predictions for new applicants: [0 1 0 0 1]
@@ -96,7 +85,7 @@ Summary: {0: 3, 1: 2}  # 3 applicants with good credit, 2 applicants with bad cr
 
 ---
 
-## 📈 Model Evaluation
+📈 Model Evaluation
 
 The model is evaluated using:
 
@@ -108,7 +97,7 @@ The model is evaluated using:
 
 ---
 
-## 🛠 Dependencies
+🛠 Dependencies
 
 All required Python packages are listed in `requirements.txt`:
 
@@ -121,7 +110,7 @@ All required Python packages are listed in `requirements.txt`:
 
 ---
 
-## 💡 Notes
+💡 Notes
 
 * Categorical features are **one-hot encoded**.
 * Make sure the datasets are in the `data/` folder.
